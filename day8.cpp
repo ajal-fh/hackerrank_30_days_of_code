@@ -20,15 +20,15 @@ int main() {
         cin>>number;
         phone_book[name] = number;
     }
-    while(true){
-        cin>>usr_input;
-        if(usr_input == "")break;
+    while(cin>>usr_input){
+        
+        
         if(phone_book.find(usr_input) == phone_book.end()){
             cout<<"Not found"<<endl;
         }
         else{
             cout<<usr_input<<"="<<phone_book[usr_input]<<endl;
-            usr_input = ""; //so as to initiate the break
+            
         }
     }
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
